@@ -6,7 +6,29 @@ colorama.init(autoreset=True)
 
 def gamestart():
 
-    word_list= ['dance','round','gamer','coder','money','place','medal','windy','fight','think','match','sandy']
+    word_list=['about','abort','above','abuse','acids','admit','actor','admin','agent',
+                'adopt','after','aimed','alien','aloud','amaze','anger','artsy','avoid',
+                'awful','badge','baton','based','beach','beard','below','bench','bendy',
+                'biome','block','blaze','block','bound','brawl','brain','brief','build',
+                'buyer','bytes','calve','cargo','cheat','chief','clean','coder','corny',
+                'crowd','crypt','cyber','dance','dazed','decay','debug','dirty','ditch',
+                'donut','drift','dusty','eight','earth','elbow','emoji','empty','equip',
+                'ethic','exams','exact','extra','flame','final','fight','force','frame',
+                'fruit','funky','grape','glove','grave','ghost','grief','guilty','grand',
+                'glaze','grown','hinge','heist','honey','haunt','hatch','hoard','hotel',
+                'hound','hover','image','ivory','irony','ideal','index','idols','ingots',
+                'input','jumpy','jack','joint','jails','joker','juicy','knife','kites',
+                'kings','knots','laser','liver','latch','lions','leapt', 'laced','loved',
+                'lifts','match','medal','money','might','minor','mango','magic','noble', 
+                'naive','nails','nudge','night','noise','newly','order','ocean','owner',
+                'outgo','ounce','ozone','oiled','place','plane','pride','peach','piano', 
+                'picks','plant','poker','quick','quest','quite','quote','quail','quiet',
+                'query','react','reach','rival','ridge','right','ready','retry','round',
+                'sandy','smart','slice','sound','spend','shout','shave','sized','think',
+                'table','touch','train','trend','truly','tiger','tacky','upset','unity',
+                'under','unzip','usage','ultra','voted','vapor','vouch','vowel','vibes',
+                'vague','water','worse','watch','whale','woken','waste','windy','yacht',
+                'yeast','years','yards','young','youth','zoned','zebra','zesty']
 
     word_selection= word_list[random.randint(0, len(word_list)-1)]
 
@@ -19,7 +41,7 @@ def gamestart():
         user_guess= input('Enter guess {}: '.format(guesses))
 
         while len(user_guess) !=5:
-            user_guess= input('You're guess must be five letters long.\nEnter guess {}: '.format(guesses))
+            user_guess= input('Your guess must be five letters long.\nEnter guess {}: '.format(guesses))
 
         user_guess= user_guess.lower()
 
